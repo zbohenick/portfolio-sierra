@@ -16,7 +16,7 @@
 
           <span class="article__meta">
               <span class="article__date"><a href="{{post.url | prepend: site.baseurl}}"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}{{ post.date | date: date_format }}</time></a></span>
-
+            <!---
               {% if post.publication.size >= 1 %}
               <span class="post-tags">
                   for
@@ -24,7 +24,7 @@
                     <a href="{{ post.hyperlink }}" class="post-tags__tag">{{ publication }}</a>
                   {% endfor %}
                 </span>
-                {% endif %}
+                {% endif %}-->
 
 
           </span>
